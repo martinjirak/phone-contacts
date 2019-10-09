@@ -1,7 +1,10 @@
-import { ApplicationState } from "../types";
 import { combineReducers } from "redux";
-import contacts from "./contacts";
+import { reducer as contacts, State as ContactsState } from "./contacts";
 
-export default combineReducers<ApplicationState>({
+export interface ApplicationState {
+  contacts: ContactsState;
+}
+
+export const appReducers = combineReducers<ApplicationState>({
   contacts
 });

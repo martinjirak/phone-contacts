@@ -1,14 +1,18 @@
 import { Reducer } from "redux";
-import { ApplicationState } from "../types";
+import { ContactsList } from "../types";
 
-export const initialState: ApplicationState = {};
+export interface State {
+  contactsList: ContactsList | null;
+}
 
-const conatcts: Reducer<ApplicationState> = (state = initialState, action) => {
+export const initialState: State = {
+  contactsList: null
+};
+
+export const reducer: Reducer<State> = (state = initialState, action) => {
   switch (action.type) {
     // TODO: ...
     default:
       return state;
   }
 };
-
-export default conatcts;
