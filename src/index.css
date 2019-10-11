@@ -1,13 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.contactRowHeader {
+  padding: 24px 24px 8px 24px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.contactRow {
+  padding: 24px 24px 24px 24px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+  font-size: 12px;
+}
+
+.contactsForm {
+  padding: 24px 24px 24px 24px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+}
+
+.contactsFormFirstName {
+  grid-column: 2;
+}
+
+.contactsFormLastName {
+  grid-column: 3;
+}
+
+.contactsFormPhone {
+  grid-column: 4;
+}
+
+.contactsFormComment {
+  grid-column: 5;
+}
+
+.contactsFormSubmit {
+  grid-column: 6;
+}
+
+.contactRowComment {
+  grid-column-start: 5;
+  grid-column-end: 7;
 }
