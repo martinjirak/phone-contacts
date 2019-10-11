@@ -32,7 +32,6 @@ const PhoneTextField = (props: TextFieldProps) => (
         R.match(/\+|\(|\)|-|\s|\d/g),
         R.join("")
       )(value);
-      props.form.setFieldTouched(props.field.name);
       props.form.setFieldValue(props.field.name, !!match ? match : "");
     }}
   />
